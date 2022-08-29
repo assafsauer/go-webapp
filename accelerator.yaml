@@ -1,0 +1,26 @@
+
+accelerator:
+  displayName: golang web app
+  description: golan web app 
+  iconUrl: https://github.com/sample-accelerators/icons/raw/master/icon-boot.png
+  tags:
+  - golang
+  - java
+  - web
+  - tanzu
+
+  # options for the UI
+  options:
+  - name: deploymentType
+    inputType: select
+    choices:
+    - value: workload
+      text: TAP workload
+    - value: k8s-simple
+      text: Kubernetes deployment and service
+    - value: manifest
+      text: Cloud Foundry manifest
+    - value: none
+      text: Skip deployment configuration
+    defaultValue: workload
+    required: true
